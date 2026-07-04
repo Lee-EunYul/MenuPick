@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+dist/
+build/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local runtime/deployment logs and archives
+api_logs/
+api_runtime_logs/
+web_logs/
+*.zip
+
+# Azure deployment artifacts (generated)
+infra/azure/artifacts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*.code-workspace

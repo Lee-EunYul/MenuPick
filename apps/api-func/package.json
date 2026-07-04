@@ -1,0 +1,18 @@
+{
+  "name": "menupick-api-func",
+  "version": "1.0.0",
+  "description": "Menupick API as Azure Functions (SWA managed API)",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}

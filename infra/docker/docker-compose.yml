@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  # PostgreSQL - 메뉴픽 데이터베이스
+  db:
+    image: postgres:16-alpine
+    container_name: menupick_db
+    restart: always
+    environment:
+      POSTGRES_USER: menupick_user
+      POSTGRES_PASSWORD: menupick_pass
+      POSTGRES_DB: menupick_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Redis - 추천 결과 임시 저장 캐시
+  redis:
+    image: redis:7-alpine
+    container_name: menupick_redis
+    restart: always
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
