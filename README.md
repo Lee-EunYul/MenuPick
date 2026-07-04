@@ -5,7 +5,9 @@
 
 ## 웹페이지
 
-- 배포 주소(확인됨): https://menupick-web-06280859348.azurewebsites.net
+[메뉴픽](https://nice-cliff-0bfc6a800.7.azurestaticapps.net/)
+
+위 링크를 클릭해서 접속하세요.
 
 
 ## 1) 프로젝트 한 줄 소개
@@ -76,4 +78,6 @@ MenuPick/
 ```
 ---
 
-문의/개선 제안은 이슈 또는 PR로 남겨주세요.
+## 개발자
+
+이은율
